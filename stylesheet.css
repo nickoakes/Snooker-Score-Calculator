@@ -1,0 +1,132 @@
+html {
+	background: black;
+	width:auto;
+	height:auto;
+	min-height: 500px;
+}
+
+h1 {
+	font-family: 'Permanent Marker', cursive;
+	text-shadow: 2px 2px gray;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+}
+
+/*table*/
+#table {
+	background: url("table.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: 100% 100%;
+	height: auto;
+	width: auto;
+	max-width: 1080px;
+	min-width: 562px;
+	overflow:auto;
+	margin: 0 auto !important;
+	float: left;
+}
+
+.ball-cont {
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+}
+
+/*balls*/
+.ball {
+	box-shadow: 3px 3px 2px #2a821c;
+	cursor: pointer;
+}
+
+.red {
+      width: 10px;
+      height: 10px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: red;
+	  padding: 0;
+    }
+	
+#yellow {
+      width: 10px;
+      height: 10px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: yellow;
+    }
+	
+#green {
+      width: 10px;
+      height: 10px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: green;
+    }
+	
+#brown {
+      width: 10px;
+      height: 10px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: #e67300;
+    }
+	
+#blue {
+      width: 10px;
+      height: 10px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: blue;
+    }
+	
+#pink {
+      width: 10px;
+      height: 10px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: #ff8080;
+    }
+	
+#black {
+      width: 10px;
+      height: 10px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: black;
+    }
+	
+/*scores*/
+#scores {
+	color: white;
+	float: left;
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	font-size: 18px;
+	padding-top: 0px;
+	padding-left: 50px;
+	padding-right:50px;
+	max-width: 550px;
+}
+
+.left {
+	text-align: left;
+	width: 200px;
+}
+
+.highlight {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.button {
+	font-family: 'Permanent Marker', cursive;
+}

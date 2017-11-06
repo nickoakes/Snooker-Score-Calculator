@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculate your snooker scores!</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="angular.min.js"></script>
+		<script src="app.js"></script>
+		
+        <link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="animate.css">
+		<link href="https://fonts.googleapis.com/css?family=Faster+One|Permanent+Marker|Trade+Winds" rel="stylesheet">    
+		</head>
+	<body>
+	<h1>Snooker Score Calculator</h1>
+		<div id="table-area">
+				<table id="table">
+			<tr height="75px">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="ball-cont"><div id="yellow" class=" colour ball" data="2"></div></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td width="50px"></td>
+				<td class="ball-cont"><div id="black" class=" colour ball" data="7"></div></td>
+				<td width="50px"></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td class="ball-cont"><div id="pink" class=" colour ball" data="6"></div></td>
+				<td width="100px"></td>
+				<td class="ball-cont"><div id="blue" class=" colour ball" data="5"></div></td>
+				<td width="100px"></td>
+				<td class="ball-cont"><div id="brown" class=" colour ball" data="4"></div></td>
+				<td width="66px"></td>
+				<td width="66px"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="ball-cont"><div class="red ball"></div></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="ball-cont"><div id="green" class=" colour ball" data="3"></div></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr height="75px">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		</div>
+		<div id="scores-area">
+		<table id="scores">
+			<tr>
+				<td><span id="p1-name"></span></td>
+				<td width="50px"></td>
+				<td><span id="p2-name"></span></td>
+			</tr>
+			<tr>
+				<td><span id="p1-score">0</span></td>
+				<td width="50px"></td>
+				<td><span id="p2-score">0</span></td>
+			</tr>
+			<tr>
+				<td class="left">Current Break:&nbsp;<span id="p1-current-break">0</span></td>
+				<td width="50px"></td>
+				<td class="left">Current Break:&nbsp;<span id="p2-current-break">0</span></td>
+			</tr>
+			<tr>
+				<td class="left">Frames:&nbsp;<span id="p1-frames">0</span></td>
+				<td width="50px"></td>
+				<td class="left">Frames:&nbsp;<span id="p2-frames">0</span></td>
+			</tr>
+			<tr>
+				<td class="left">Highest break:&nbsp;<span id="p1-highest-break">0</span></td>
+				<td width="50px"></td>
+				<td class="left">Highest break:&nbsp;<span id="p2-highest-break">0</span></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td width="50px"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="foul button" id="p1-foul" value="Foul" data="4"></td>
+				<td width="50px"></td>
+				<td><input type="button" class=" foul button" id="p2-foul" value="Foul" data="4"></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="foul button" id="p2-plus-five" data="5"></td>
+				<td width="50px"></td>
+				<td><input type="button" class="foul button" id="p1-plus-five" data="5"></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="foul button" id="p2-plus-six" data="6"></td>
+				<td width="50px"></td>
+				<td><input type="button" class="foul button" id="p1-plus-six" data="6"></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="foul button" id="p2-plus-seven" data="7"></td>
+				<td width="50px"></td>
+				<td><input type="button" class="foul button" id="p1-plus-seven" data="7"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td width="50px"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="button" id="p1-break" value="New Break"></td>
+				<td width="50px"><input type="button" class="button" id="re-rack" value="Re-rack"></td>
+				<td><input type="button" class="button" id="p2-break" value="New Break"></td>
+			</tr>
+			<tr>
+				<td colspan="3"><input type="button" class="button" id="new-frame" value="New Frame"></td>
+			</tr>
+			<tr>
+				<td colspan="3"><input type="button" class="button" id="new-match" value="New Match"></td>
+			</tr>
+			<tr>
+				<td colspan="3"><input type="button" class="button" id="colour-respot" value="Re-spot colour" hidden></td>
+			</tr>
+		</table>
+		</div>
+	</body>
+</html>
