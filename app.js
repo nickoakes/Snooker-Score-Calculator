@@ -1,7 +1,15 @@
+/*
+	Snooker Score Calculator
+	app.js
+*/
+
 $(document).ready(function(){
 //name entry
 var p1Name = prompt("Player 1 please enter your name:");
 var p2Name = prompt("Player 2 please enter your name:");
+
+//dynamically set button values for each player using the names entered
+
 document.getElementById('p2-plus-five').setAttribute("value", p2Name + " +5");
 document.getElementById('p1-plus-five').setAttribute("value", p1Name + " +5");
 document.getElementById('p2-plus-six').setAttribute("value", p2Name + " +6");
@@ -86,6 +94,8 @@ $('.colour').on("click", function(){
 		$(this).show;
 	}
 })
+
+//animate balls on click
 
 $('.colour').on("mousedown", function(){
 	$(this).addClass('rubberBand');
