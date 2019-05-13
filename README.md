@@ -1,2 +1,2 @@
 # Snooker-Score-Calculator
-A single-page snooker score calculator
+A single-page snooker score calculator. Initial prompts capture the two players' names, which are then displayed on the page above their scores. Scores are kept by activating a break for the current player, before clicking the balls they pot in order. The on-screen table updates to reflect the state of the real table as play progresses. Additional buttons allow for the recording of fouls, the table to be re-racked, and a new game/ frame to be initiated.
